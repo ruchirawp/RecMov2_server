@@ -1,0 +1,26 @@
+#SHOW ROUTES 
+POST http://localhost:3001/shows/add/2316
+Content-Type: application/json
+
+#114410
+#130542
+
+#####
+PUT http://localhost:3001/shows/remove/2316
+Content-Type: application/json
+
+#####
+GET http://localhost:3001/shows/119051
+Content-Type: application/json
+
+#####
+GET http://localhost:3001/shows
+Content-Type: application/json
+
+#####
+GET http://localhost:3001/shows/rec
+Content-Type: application/json
+
+#####
+GET http://localhost:3001/shows/getliked
+Content-Type: application/json

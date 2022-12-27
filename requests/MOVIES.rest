@@ -1,0 +1,24 @@
+#MOVIES ROUTES 
+#####
+POST http://localhost:3001/movies/add/555604
+Content-Type: application/json
+
+#####
+PUT http://localhost:3001/movies/remove/169
+Content-Type: application/json
+
+#####
+GET http://localhost:3001/movies/154
+Content-Type: application/json
+
+#####
+GET http://localhost:3001/movies
+Content-Type: application/json
+
+#####
+GET http://localhost:3001/movies/rec
+Content-Type: application/json
+
+#####
+GET http://localhost:3001/movies/getliked
+Content-Type: application/json

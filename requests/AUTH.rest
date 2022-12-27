@@ -1,0 +1,22 @@
+
+#AUTHENTICATION ROUTES
+
+#####
+POST http://localhost:3001/register
+Content-Type: application/json
+
+{
+    "name": "billy", 
+    "email" : "billy@gmail.com",
+    "password" : "admin123"
+}
+
+######
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+    "email" : "ruchira@gmail.com",
+    "password" : "admin123"
+}
+
