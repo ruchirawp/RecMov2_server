@@ -1,5 +1,5 @@
 import express from "express";
-import { addLikedShow, removeLikedShow, getLikedShows, getRecommendedShows, getAllShows } from '../controllers/Show.js';
+import { addLikedShow, removeLikedShow, getLikedShows, getRecommendedShows, getAllShows } from '../controllers/show.js';
 
 const showRoutes = express.Router();
 
