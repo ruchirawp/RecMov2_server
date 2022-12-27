@@ -99,6 +99,11 @@ export const getAllMovies = async (req, res) => {
   //     headers: { "Accept-Encoding": "gzip,deflate,compress" } 
   // }
 
+
+  console.log("TESTING LOGGING")
+
+  console.log(process.env.API_KEY)
+
     //get popular movies 
     await axios.get(`https:api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}`, { 
       headers: { "Accept-Encoding": "gzip,deflate,compress" } 
