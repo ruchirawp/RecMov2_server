@@ -99,18 +99,21 @@ export const getAllMovies = async (req, res) => {
   //     headers: { "Accept-Encoding": "gzip,deflate,compress" } 
   // }
 
-
   console.log("TESTING LOGGING")
-
   console.log(process.env.API_KEY)
 
     //get popular movies 
-    await axios.get(`https:api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}`, { 
-      headers: { "Accept-Encoding": "gzip,deflate,compress" } 
-  })
+    await axios.get(`https:api.themoviedb.org/3/movie/popular?api_key=${process.env.API_KEY}`
+    // , { headers: { "Accept-Encoding": "gzip,deflate,compress" } }
+    )
       .then(function (result) {
         popularMovies = result.data.results;
-      });
+      })
+      .catch(error => {
+        console.log("error" , error)
+     })
+
+     console.log("got popular movies")
 
   // //get top rated movies 
     await axios.get(`https:api.themoviedb.org/3/movie/top_rated?api_key=${process.env.API_KEY}`,{ 
