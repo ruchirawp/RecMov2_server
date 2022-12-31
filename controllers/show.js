@@ -85,10 +85,8 @@ export const removeLikedShow = async (req, res) => {
 
 //gets Shows for popular Shows, genre1, genre2, genre3 
 export const getAllShows = async (req, res) => {
+  
   try {
-
-    console.log("GET ALL SHOWS")
-
     let popularShows = null
     let topRatedShows = null
     
