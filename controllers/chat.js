@@ -13,7 +13,7 @@ export const getChatResults = async (req, res) => {
                     { role: "system", content: " You personality is a movie and tv show lover. Keep your responses EXTREMELY concise and complete, as if you are sending a text message to a friend." },
                     { role: "user", content: message }
                 ],
-                max_tokens: 60,  // Adjust if responses are still cut off
+                max_tokens: 100,  // Adjust if responses are still cut off
                 temperature: 0.3
             },
             {
