@@ -11,6 +11,7 @@ import movieRoutes from "./routes/movies.js";
 import showRoutes from "./routes/shows.js";
 import authRoutes from "./routes/auth.js";
 import searchRoutes from "./routes/search.js";
+import chatRoutes from "./routes/chat.js";
 import { fileURLToPath } from 'url';
 import { addLikedMovie, removeLikedMovie, getMovieInfo, getLikedMovies, getRecommendedMovies } from './controllers/movie.js';
 import User from './models/Users.js';
@@ -54,6 +55,7 @@ app.use('/assets', express.static(path.join(__dirname, 'public/assets')));
 app.use("/search", searchRoutes);
 app.use("/movies", movieRoutes);
 app.use("/shows", showRoutes);
+app.use("/chat", chatRoutes);
 app.use("", authRoutes);
 
 /* MONGOOSE SETUP */
